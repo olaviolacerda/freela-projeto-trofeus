@@ -20,7 +20,7 @@ import {
 
 ReactDOM.render(
     (
-        <Router history={browserHistory}>
+        <Router>
             <Route path="/" component={App}>
                 <IndexRoute component={Home}/>
                 <Route path="/gallery" component={Gallery} />
