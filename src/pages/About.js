@@ -12,7 +12,7 @@ export default class About extends Component {
                     <div className="row">
                         <div className="col-md-6 col-md-offset-3 text-center fh5co-heading">
                             <h2>About</h2>
-                            <p><span>Created with <i className="sl-icon-heart"></i> by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></span></p>
+                            <p><span>Creaaaaaaaaated with <i className="sl-icon-heart"></i> by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></span></p>
                         </div>
                     </div>
                     <div className="row">
