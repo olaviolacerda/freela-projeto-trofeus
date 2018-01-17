@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import '../src/css/bootstrap.css';
-import '../src/css/style.css';
-import '../src/css/animate.css';
-import '../src/css/simple-line-icons.css';
 import Header from './components/Header';
 import IntroSection from './components/IntroSection';
 import ServiceSection from './components/ServiceSection';
 import GallerySection from './components/GallerySection';
+import AboutSection from './components/AboutSection';
 import CSSTransitionGroup from 'react-transition-group/CSSTransition';
+
 
 class App extends Component {
   render() {
@@ -22,6 +20,7 @@ class App extends Component {
           <IntroSection />
           <ServiceSection />
           <GallerySection />
+          <AboutSection />
         </div>
       </CSSTransitionGroup>
     );
