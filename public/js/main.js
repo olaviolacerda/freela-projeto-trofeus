@@ -80,13 +80,13 @@
 	var offcanvasMenu = function() {
 		$('body').prepend('<div id="fh5co-offcanvas" />');
 		$('#fh5co-offcanvas').prepend('<ul id="fh5co-side-links">');
-		$('body').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>');
+		$('body').prepend('<a  href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>');
 		$('#fh5co-offcanvas').append($('#fh5co-header nav').clone());
 	};
 
 
 	var burgerMenu = function() {
-
+		console.log('to sendo')
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 			var $this = $(this);
 
