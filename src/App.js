@@ -5,7 +5,7 @@ import './css/animate.css';
 import './css/simple-line-icons.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import CSSTransitionGroup from 'react-transition-group/CSSTransition';
+ // import CSSTransitionGroup from 'react-transition-group/CSSTransition';
 
 
 class App extends Component {
