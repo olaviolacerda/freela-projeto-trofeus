@@ -8,7 +8,7 @@ export default class ServiceSection extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                                <h2>Our Awesome Services</h2>
+                                <h2>Aqui pode falar breve sobre os serviços</h2>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
                             </div>
                         </div>

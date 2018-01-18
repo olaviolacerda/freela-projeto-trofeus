@@ -30,7 +30,7 @@ export default class IntroSection extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2 text-center">
-                            <h2>Lesser is a creative agency that love to create functional website</h2>
+                            <h2>Aqui vai alguma frase simples explicando o que é/faz</h2>
                         </div>
                     </div>
                 </div>
