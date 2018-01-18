@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, IndexLink } from 'react-router';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default class Header extends Component {
@@ -9,7 +9,7 @@ export default class Header extends Component {
     }
    
     render() {
-       let path = this.context.router.getCurrentLocation().pathname;
+       let path = this.context.router.history.location.pathname;
         return (
             <header id="fh5co-header" role="banner">
                 <div className="container">
@@ -17,7 +17,7 @@ export default class Header extends Component {
                         <h1><i className="sl-icon-energy"></i><Link to="/">Nome</Link></h1>
                         <nav >
                             <ul>
-                                <li><IndexLink to="/" className={this.defineClass(path, '/')}>Home</IndexLink></li>
+                                <li><Link to="/" className={this.defineClass(path, '/')}>Home</Link></li>
                                 <li><Link to="/about" className={this.defineClass(path,'/about')} >Sobre</Link></li>
                                 <li><Link to="/gallery" className={this.defineClass(path, '/gallery')}>Galeria</Link></li>
                                 <li><Link to="/services" className={this.defineClass(path, '/services')}>Serviços</Link></li>

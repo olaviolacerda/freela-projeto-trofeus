@@ -86,7 +86,6 @@
 
 
 	var burgerMenu = function() {
-		console.log('to sendo')
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 			var $this = $(this);
 

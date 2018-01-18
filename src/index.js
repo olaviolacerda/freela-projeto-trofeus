@@ -10,26 +10,25 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
-import {
-    Router,
-    Route,
-    IndexRoute,
-    browserHistory
-} from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 ReactDOM.render(
     (
-        <Router history={browserHistory}>
-            <Route path="/" component={App}>
-                <IndexRoute component={Home}/>
-                <Route path="/gallery" component={Gallery} />
-                <Route path="/services" component={Services} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-                <Route path="*" component={NotFound}/>
-            </Route>
-        </Router>
+       
+            <Router>
+                <App>
+                    <Switch >
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/gallery" component={Gallery} />
+                        <Route exact path="/services" component={Services} />
+                        <Route exact path="/contact" component={Contact} />
+                        <Route exact path="*" component={NotFound} />
+                    </Switch>
+                </App>
+            </Router>
+       
     ),
     document.querySelector('#root'));
 registerServiceWorker();
