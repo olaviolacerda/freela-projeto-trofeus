@@ -75,7 +75,7 @@ export default class Contact extends Component {
                             <div className="col-md-3">
                                 <h3>Contate-nos</h3>
                                 <ul className="contact-info">
-                                    <li><i className="sl-icon-map"></i>Rua Doutor Dias da Cruz, Nº 62</li>
+                                    <li><i className="sl-icon-map"></i>Nome da Rua, Número</li>
                                     <li><i className="sl-icon-phone"></i>+ 1235 2355 98</li>
                                     <li><i className="sl-icon-envelope-open"></i><a href="mailto:info@email.com">info@email.com</a></li>
                                 </ul>

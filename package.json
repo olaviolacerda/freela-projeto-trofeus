@@ -8,15 +8,16 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
-    "react-transition-group": "^2.2.1"
+    "react-transition-group": "^2.2.1",
+    "svgxuse": "^1.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run test:once && npm run build && aws s3 sync build/ s3://react-practice-aws-project"
-  }, 
+    "deploy": "npm run build && aws s3 sync build/ s3://react-practice-aws-project"
+  },
   "devDependencies": {
     "jquery": "^3.2.1",
     "react-addons-css-transition-group": "^15.6.2",
