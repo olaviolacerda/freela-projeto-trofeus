@@ -10,24 +10,33 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 
+const Routes = withRouter(({ history }) => (
+    <ReactCSSTransitionGroup
+        transitionName='App'
+        transitionEnterTimeout={500} transitionLeaveTimeout={300}
+    >
+        <Switch key={history.location.pathname} pathname={history.location.pathname}>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/services" component={Services} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="*" component={NotFound} />
+        </Switch>
+    </ReactCSSTransitionGroup>
+));
 
 ReactDOM.render(
     (
-            <Router>
-                <App>
-                    <Switch >
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/gallery" component={Gallery} />
-                        <Route exact path="/services" component={Services} />
-                        <Route exact path="/contact" component={Contact} />
-                        <Route exact path="*" component={NotFound} />
-                    </Switch>
-                </App>
-            </Router>
-       
+        <Router>
+            <App>
+                <Routes />
+            </App>
+        </Router>
+
     ),
     document.querySelector('#root'));
 registerServiceWorker();

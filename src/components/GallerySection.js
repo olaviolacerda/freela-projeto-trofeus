@@ -21,7 +21,7 @@ export default class GallerySection extends Component {
                                 <div className="desc">
                                     <h3><a >New iPhone 6 Released</a></h3>
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a  className="btn btn-primary btn-outline with-arrow">Read More<i className="icon-arrow-right"></i></a></p>
+                                    <p><a  className="btn btn-primary btn-outline with-arrow">Read More<i className="fa fa-arrow-right"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ export default class GallerySection extends Component {
                                 <div className="desc">
                                     <h3><a >Start your day with a beautiful appearance</a></h3>
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a  className="btn btn-primary btn-outline with-arrow">Read More<i className="icon-arrow-right"></i></a></p>
+                                    <p><a  className="btn btn-primary btn-outline with-arrow">Read More<i className="fa fa-arrow-right"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ export default class GallerySection extends Component {
                                 <div className="desc">
                                     <h3><a >Bookmarksgrove right</a></h3>
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a  className="btn btn-primary btn-outline with-arrow">Read More<i className="icon-arrow-right"></i></a></p>
+                                    <p><a  className="btn btn-primary btn-outline with-arrow">Read More<i className="fa fa-arrow-right"></i></a></p>
                                 </div>
                             </div>
                         </div>
