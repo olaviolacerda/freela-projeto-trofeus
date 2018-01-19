@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import image4 from '.././images/image_4.jpg';
-import image5 from '.././images/image_5.jpg';
-import image6 from '.././images/image_6.jpg';
+import image4 from '../images/image_4.jpg';
+import image5 from '../images/image_5.jpg';
+import image6 from '../images/image_6.jpg';
 
 export default class GallerySection extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class GallerySection extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                            <h2></h2>
+                            <h2>Aqui vão as fotos dos trabalhos</h2>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
                         </div>
                     </div>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import image6 from '.././images/image_6.jpg';
-import image2 from '.././images/image_2.jpg';
-import image3 from '.././images/image_3.jpg';
-import image8 from '.././images/image_8.jpg';
+import image6 from '../images/image_6.jpg';
+import image2 from '../images/image_2.jpg';
+import image3 from '../images/image_3.jpg';
+import image8 from '../images/image_8.jpg';
 
 
 const backgrounds = {

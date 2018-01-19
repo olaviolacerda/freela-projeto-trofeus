@@ -1196,10 +1196,10 @@ h1, h2, h3, h4, h5, h6, figure {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-nav-toggle {
+  /* .fh5co-nav-toggle {
     display: block;
     top: 40px;
-  }
+  } */
 }
 
 .js .animate-box {
@@ -1214,5 +1214,5 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .example-appear.example-appear-active {
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transition: opacity 1500ms ease-in;
 }

@@ -2,6 +2,34 @@ import React, { Component } from 'react';
 
 export default class Contact extends Component {
 
+
+    clearFields = () => {
+        let matches = document.querySelectorAll(".form-control");
+        matches.forEach(match => {
+            match.value = '';
+        });
+    }
+
+    sendEmail = (event) => {
+        event.preventDefault();
+        let body = {
+            name: this.name.value,
+            email: this.email.value,
+            message: this.message.value,
+        };
+
+        const requestInfo = {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: new Headers({
+                'Content-type': 'application/json'
+            })
+        };
+        console.log(body);
+        this.clearFields();
+    }
+
+
     render() {
         return (
             <React.Fragment>
@@ -9,42 +37,44 @@ export default class Contact extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                                <h2>Contact</h2>
-                                <p><span>Created with <i className="sl-icon-heart"></i> by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></span></p>
+                                <h2>Contato</h2>
+                                <p><span>Escreva suas dúvidas ou solicite seu orçamento</span></p>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-3">
-                                <h3>Contact Info.</h3>
+                                <h3>Contate-nos</h3>
                                 <ul className="contact-info">
-                                    <li><i className="sl-icon-map"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
+                                    <li><i className="sl-icon-map"></i>Rua Doutor Dias da Cruz, Nº 62</li>
                                     <li><i className="sl-icon-phone"></i>+ 1235 2355 98</li>
-                                    <li><i className="sl-icon-envelope-open"></i><a >info@yoursite.com</a></li>
-                                    <li><i className="sl-icon-globe-alt"></i><a >www.yoursite.com</a></li>
+                                    <li><i className="sl-icon-envelope-open"></i><a >info@email.com</a></li>
                                 </ul>
                             </div>
                             <div className="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
                                 <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="form-group">
-                                            <input className="form-control" placeholder="Name" type="text" />
+                                    <form data-toggle="validator" role="form" onSubmit={this.sendEmail}>
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <input className="form-control" placeholder="Nome" required type="text" ref={(input) => this.name = input} />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-group">
-                                            <input className="form-control" placeholder="Email" type="text" />
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <input id="inputEmail" className="form-control" placeholder="Email" type="email" data-error="Bruh, that email address is invalid" required ref={(input) => this.email = input} />
+                                                <div className="help-block with-errors"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-md-12">
-                                        <div className="form-group">
-                                            <textarea name="" className="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                                        <div className="col-md-12">
+                                            <div className="form-group">
+                                                <textarea className="form-control" id="" cols="30" rows="7" required placeholder="Mensagem" ref={(input) => this.message = input}></textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-md-12">
-                                        <div className="form-group">
-                                            <input value="Send Message" className="btn btn-primary" type="submit" />
+                                        <div className="col-md-12">
+                                            <div className="form-group">
+                                                <button value="Enviar" className="btn btn-primary" type="submit" >Enviar</button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

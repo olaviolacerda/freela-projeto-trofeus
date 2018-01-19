@@ -14,7 +14,7 @@ export default class Header extends Component {
             <header id="fh5co-header" role="banner">
                 <div className="container">
                     <div className="header-inner">
-                        <h1><i className="sl-icon-energy"></i><Link to="/">Nome</Link></h1>
+                        <h1><i className="sl-icon-trophy"></i><Link to="/">Nome</Link></h1>
                         <nav >
                             <ul>
                                 <li><Link to="/" className={this.defineClass(path, '/')}>Home</Link></li>

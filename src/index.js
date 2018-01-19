@@ -15,7 +15,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
     (
-       
             <Router>
                 <App>
                     <Switch >
