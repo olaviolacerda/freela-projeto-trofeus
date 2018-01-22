@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
+import Section from '../components/Section';
+import AsideList from '../components/AsideList';
 
 export default class Sevices extends Component {
 
     render() {
         return (
-            <div id="fh5co-main-services-section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                            <h2>Our Services</h2>
-                            <p><span>Created with <i className="sl-icon-heart"></i> by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></span></p>
-                        </div>
-                    </div>
-                    <div className="row">
+            <Section
+                classTitle={'main-services'}
+                title={'Nossos serviços'}
+                subtitle={'aqui vai uma descrição'}
+                children={
+                    <React.Fragment>
                         <div className="col-md-8">
                             <div className="row">
                                 <div className="col-md-12 services-inner">
@@ -38,32 +37,11 @@ export default class Sevices extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4">
-                            <aside className="sidebar">
-                                <div className="row">
-                                    <div className="col-md-12 side">
-                                        <h3>Categories</h3>
-                                        <ul>
-                                            <li><i className="fa fa-check"></i><a >Web Design</a></li>
-                                            <li><i className="fa fa-check"></i><a >Branding &amp; Identity</a></li>
-                                            <li><i className="fa fa-check"></i><a >Free HTML5</a></li>
-                                            <li><i className="fa fa-check"></i><a >HandCrafted Templates</a></li>
-                                            <li><i className="fa fa-check"></i><a >Free Bootstrap Template</a></li>
-                                            <li><i className="fa fa-check"></i><a >Free HTML5 Template</a></li>
-                                            <li><i className="fa fa-check"></i><a >Free HTML5 &amp; CSS3 Template</a></li>
-                                            <li><i className="fa fa-check"></i><a >HandCrafted Templates</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-md-12 side">
-                                        <h3>Paragraph</h3>
-                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    </div>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <AsideList />
+                    </React.Fragment>
+                } />
+
         );
     }
 }
+

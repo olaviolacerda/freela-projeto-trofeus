@@ -19,6 +19,7 @@
     "deploy": "npm run build && aws s3 sync build/ s3://react-practice-aws-project"
   },
   "devDependencies": {
+    "axios": "^0.17.1",
     "jquery": "^3.2.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-router": "^3.2.0"

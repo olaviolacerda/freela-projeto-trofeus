@@ -63,5 +63,5 @@ a {
 
 .not-found {
   display: flex;
-  width: -webkit-fill-available;
+  width: stretch;
 }

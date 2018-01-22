@@ -39,7 +39,7 @@ export default class IntroSection extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <a  className="featured-grid" style={backgrounds.bg1} >
+                            <a  className="featured-grid " style={backgrounds.bg1} >
                                 <div className="desc">
                                     <h3>Work with love</h3>
                                     <span>Web Design</span>
