@@ -17,7 +17,7 @@ export default class Contact extends Component {
                             <ul className="contact-info">
                                 <li><i className="sl-icon-map"></i>Nome da Rua, Número</li>
                                 <li><i className="sl-icon-phone"></i>+ 1235 2355 98</li>
-                                <li><i className="sl-icon-envelope-open"></i><a href="mailto:info@email.com">info@email.com</a></li>
+                                <li><i className="sl-icon-envelope-open"></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=info@email.com&tf=1">info@email.com</a></li>
                             </ul>
                         </div>
                         <EmailCard />
