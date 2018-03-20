@@ -5,7 +5,7 @@ export default class EasterEgg extends Component {
 
     render() {
         return (
-            <img className="easter-egg" src={faith} alt="faith-symbol" />
+            <img className="" src={faith} alt="faith-symbol" />
         );
     }
 }

@@ -16,7 +16,7 @@ export default class Gallery extends Component {
                 classTitle={'work'}
                 title={'Galeria'}
                 subtitle={
-                    'dsadsad'
+                    ''
                 }
                 children={
                     <React.Fragment>

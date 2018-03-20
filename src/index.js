@@ -14,7 +14,6 @@ import NotFound from './pages/NotFound';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 
-console.log("habemus aws && heroku && scss")
 const Routes = withRouter(({ history }) => (
     <ReactCSSTransitionGroup
         transitionName='App'

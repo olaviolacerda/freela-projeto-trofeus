@@ -1,5 +1,12 @@
+@import './App.scss';
+@import './Grid.scss';
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.align-center {
+  text-align: center;
 }

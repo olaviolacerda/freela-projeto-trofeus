@@ -7,18 +7,18 @@ export default class Header extends Component {
     defineClass = (path, linkPath) => {
         return path === linkPath ? 'active' : '';
     }
-   
+
     render() {
-       let path = this.context.router.history.location.pathname;
+        let path = this.context.router.history.location.pathname;
         return (
-            <header id="fh5co-header" role="banner">
-                <div className="container">
-                    <div className="header-inner">
-                        <h1><i className="sl-icon-trophy"></i><Link to="/">Nome</Link></h1>
+            <header id="" role="banner">
+                <div className="grid-container">
+                    <div className="col-12">
+                        <h1><i className=""></i><Link to="/">Pablo Gravações</Link></h1>
                         <nav >
                             <ul>
                                 <li><Link to="/" className={this.defineClass(path, '/')}>Home</Link></li>
-                                <li><Link to="/about" className={this.defineClass(path,'/about')} >Sobre</Link></li>
+                                <li><Link to="/about" className={this.defineClass(path, '/about')} >Sobre</Link></li>
                                 <li><Link to="/gallery" className={this.defineClass(path, '/gallery')}>Galeria</Link></li>
                                 <li><Link to="/services" className={this.defineClass(path, '/services')}>Serviços</Link></li>
                                 <li><Link to="/contact" className={this.defineClass(path, '/contact')}>Contato</Link></li>

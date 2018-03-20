@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import image from '../images/image_about.jpg';
 import Section from '../components/Section';
-import AsideList from '../components/AsideList';
+// import AsideList from '../components/AsideList';
 
 
 export default class About extends Component {
@@ -11,24 +11,23 @@ export default class About extends Component {
             <Section
                 classTitle={'about'}
                 title={'Um pouco sobre nós'}
-                subtitle={'aqui vai a descrição'}
+                subtitle={''}
                 children={
                     <React.Fragment>
-                        <div className="col-md-8">
+                        <div className="">
                             <div className="row">
-                                <div className="col-md-12">
-                                    <div className="about-inner">
-                                        <img className="img-responsive" src={image} alt="About" />
-                                        <h3>History</h3>
-                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                <div className="">
+                                    <div className="">
+                                        <img className="" src={image} alt="About" />
+                                        <p>A Pablo Gravações trabalha há mais de 20 anos no mercado de gravação em metal, produzindo placas, bottons e troféus de alta qualidade para os mais diversos fins que vão desde a identificação de consultórios e funcionários até as mais belas homenagens e personalização de objetos em metal.</p>
                                         <blockquote>
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                            <p></p>
                                         </blockquote>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <AsideList />
+                        {/* <AsideList /> */}
                     </React.Fragment>
                 } />
         );
