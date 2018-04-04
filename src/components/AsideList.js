@@ -9,10 +9,10 @@ export default class AsideList extends Component {
 
     render() {
         return (
-            <div className="col-md-4">
-                <aside className="sidebar">
+            <div className="">
+                <aside className="">
                     <div className="row">
-                        <div className="col-md-12 side">
+                        <div className="">
                             <h3>Categories</h3>
                             <ul>
                                 <li><i className="fa fa-check"></i><a >Web Design</a></li>
@@ -25,7 +25,7 @@ export default class AsideList extends Component {
                                 <li><i className="fa fa-check"></i><a >HandCrafted Templates</a></li>
                             </ul>
                         </div>
-                        <div className="col-md-12 side">
+                        <div className="">
                             <h3>Paragraph</h3>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                         </div>

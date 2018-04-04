@@ -12,25 +12,25 @@ export default class Sevices extends Component {
                 subtitle={'aqui vai uma descrição'}
                 children={
                     <React.Fragment>
-                        <div className="col-md-8">
+                        <div className="">
                             <div className="row">
-                                <div className="col-md-12 services-inner">
-                                    <span><i className="sl-icon-graph"></i></span>
-                                    <div className="desc">
+                                <div className="">
+                                    <span><i className=""></i></span>
+                                    <div className="">
                                         <h3>Finance Dashboard</h3>
                                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-12 services-inner">
-                                    <span><i className="sl-icon-heart"></i></span>
-                                    <div className="desc">
+                                <div className="">
+                                    <span><i className=""></i></span>
+                                    <div className="">
                                         <h3>Made with Love</h3>
                                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-12 services-inner">
-                                    <span><i className="sl-icon-key"></i></span>
-                                    <div className="desc">
+                                <div className="">
+                                    <span><i className=""></i></span>
+                                    <div className="">
                                         <h3>Help &amp; Support</h3>
                                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                                     </div>

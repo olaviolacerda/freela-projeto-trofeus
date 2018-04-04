@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import merchant from '../images/not-found.png';
 
 export default class NotFound extends Component {
-    render(){
+    render() {
         return (
-            <img className="not-found" src={merchant} alt="" />
+            <img className="" src={merchant} alt="" />
         );
     }
 }

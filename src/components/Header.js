@@ -1,29 +1,35 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
+import '../css/Header.scss';
 export default class Header extends Component {
 
     defineClass = (path, linkPath) => {
         return path === linkPath ? 'active' : '';
     }
-   
+
     render() {
-       let path = this.context.router.history.location.pathname;
+        let path = this.context.router.history.location.pathname;
         return (
-            <header id="fh5co-header" role="banner">
-                <div className="container">
-                    <div className="header-inner">
-                        <h1><i className="sl-icon-trophy"></i><Link to="/">Nome</Link></h1>
-                        <nav >
-                            <ul>
-                                <li><Link to="/" className={this.defineClass(path, '/')}>Home</Link></li>
-                                <li><Link to="/about" className={this.defineClass(path,'/about')} >Sobre</Link></li>
-                                <li><Link to="/gallery" className={this.defineClass(path, '/gallery')}>Galeria</Link></li>
-                                <li><Link to="/services" className={this.defineClass(path, '/services')}>Serviços</Link></li>
-                                <li><Link to="/contact" className={this.defineClass(path, '/contact')}>Contato</Link></li>
-                            </ul>
-                        </nav>
+            <header id="header" role="banner">
+                <div className="col-12 header">
+                    <div className="static-width">
+                        <div className="row">
+                            <div className="col-3">
+                                <h1><i ></i><Link to="/" className="title">Pablo Gravações</Link></h1>
+                            </div>
+                            <div className="col-7 col-2-offset">
+                                <nav >
+                                    <ul>
+                                        <li className={this.defineClass(path, '/')}><Link to="/" >Home</Link></li>
+                                        <li className={this.defineClass(path, '/about')}><Link to="/about"  >Sobre</Link></li>
+                                        <li className={this.defineClass(path, '/gallery')}><Link to="/gallery" >Galeria</Link></li>
+                                        <li className={this.defineClass(path, '/services')}><Link to="/services" >Serviços</Link></li>
+                                        <li className={this.defineClass(path, '/contact')}><Link to="/contact" >Contato</Link></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>

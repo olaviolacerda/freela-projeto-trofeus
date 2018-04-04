@@ -52,8 +52,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "build:run": "npm run build",
-    "aws":"aws s3 sync build/ s3://react-practice-aws-project",
-    "deploy": "npm run build:run && sh git.sh && npm run aws"
+    "deploy": "npm run build:run && sh git.sh"
   },
   "devDependencies": {
     "axios": "^0.17.1",
