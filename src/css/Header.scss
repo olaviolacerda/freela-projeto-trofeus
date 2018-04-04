@@ -1,0 +1,58 @@
+
+
+.header {
+    background-color: rgb(255, 250, 250);
+    padding: 0 3em;
+    box-shadow: 0 4px 6px -6px #222;
+    position: fixed;
+    max-height: 100px;
+    top: 0;
+
+    * {
+        text-decoration: none;
+    }
+
+    nav {
+        
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 0.5em 0;
+    }
+
+    .title {
+        padding: 0 0.3em 0 0;
+        font-size: large;
+        vertical-align: middle;
+        color: black;
+    }
+
+    li {
+        cursor: pointer;
+        transition: all 200ms ease;
+        list-style-type: none;
+        display: inline-block;
+        padding: 0.3em 0.5em;
+        vertical-align: middle;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        margin: 0.15em 0.2em;
+        
+       &:hover {
+           border-radius: 50px;
+           border-color: #009688;
+           opacity: 0.8;
+       }
+        a {
+        color: #009688;
+      }
+    }
+    .active {
+        border-color: #009688;
+        background-color: rgba(0, 150, 135, 0.068);
+        
+    }
+}
+

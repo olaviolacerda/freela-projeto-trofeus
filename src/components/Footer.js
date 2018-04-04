@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <footer id="" role="">
 
-                <div className="grid-container align-center">
+                <div className="align-center">
                     <div className="row">
                         <div className="row">
                             <div className="col-10 col-2-fill">

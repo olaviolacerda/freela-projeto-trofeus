@@ -34,7 +34,7 @@ const Routes = withRouter(({ history }) => (
 ReactDOM.render(
     (
         <Router>
-            <App>
+            <App >
                 <Routes />
             </App>
         </Router>
