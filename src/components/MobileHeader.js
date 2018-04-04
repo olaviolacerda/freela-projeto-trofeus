@@ -23,14 +23,11 @@ export default class MobileHeader extends Component {
         this.setState({ nav: navBar, opened: opened })
     }
 
-    defineClass = (path, linkPath) => {
-        return path === linkPath ? 'active' : '';
-    }
 
     render() {
-        let path = this.context.router.history.location.pathname;
         let btnOpenAppear = this.state.opened ? 'hide' : '';
         let btnCloseAppear = this.state.opened ? '' : 'hide';
+
         return (
             <header id="mobile-header" role="banner">
                 <div className="col-12 mobile-header">
@@ -45,12 +42,13 @@ export default class MobileHeader extends Component {
                                 </div>
 
                                 <nav >
+
                                     <ul>
-                                        <li className={` ${this.defineClass(path, '/')}`}><Link className="col-12" to="/" >Home</Link></li>
-                                        <li className={`${this.defineClass(path, '/about')}`}><Link className="col-12" to="/about"  >Sobre</Link></li>
-                                        <li className={` ${this.defineClass(path, '/gallery')}`}><Link className="col-12" to="/gallery" >Galeria</Link></li>
-                                        <li className={` ${this.defineClass(path, '/services')}`}><Link className="col-12" to="/services" >Serviços</Link></li>
-                                        <li className={` ${this.defineClass(path, '/contact')}`}><Link className="col-12" to="/contact" >Contato</Link></li>
+                                        <li className="active"><Link className="col-12" to="/" >Home</Link></li>
+                                        <li className="active"><Link className="col-12" to="/about"  >Sobre</Link></li>
+                                        <li className="active"><Link className="col-12" to="/gallery" >Galeria</Link></li>
+                                        <li className="active"><Link className="col-12" to="/services" >Serviços</Link></li>
+                                        <li className="active"><Link className="col-12" to="/contact" >Contato</Link></li>
                                     </ul>
                                 </nav>
                             </div>
