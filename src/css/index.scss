@@ -1,6 +1,6 @@
 @import './App.scss';
 @import './Grid.scss';
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Courgette');
 
 body {
   margin: 0;
@@ -9,7 +9,12 @@ body {
   padding-top: 100px;
 }
 
-.align-center {
-  text-align: center;
+.wrapper {
+  margin-bottom: 100px;
 }
 
+.gallery {
+img {
+  width: 10% !important;
+}
+}
