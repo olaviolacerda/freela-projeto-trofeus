@@ -23,6 +23,9 @@ export default class MobileHeader extends Component {
         this.setState({ nav: navBar, opened: opened })
     }
 
+    close = () => {
+        window.realod();
+    }
 
     render() {
         let btnOpenAppear = this.state.opened ? 'hide' : '';
@@ -44,11 +47,11 @@ export default class MobileHeader extends Component {
                                 <nav >
 
                                     <ul>
-                                        <li className="active"><Link className="col-12" to="/" >Home</Link></li>
-                                        <li className="active"><Link className="col-12" to="/about"  >Sobre</Link></li>
-                                        <li className="active"><Link className="col-12" to="/gallery" >Galeria</Link></li>
-                                        <li className="active"><Link className="col-12" to="/services" >Serviços</Link></li>
-                                        <li className="active"><Link className="col-12" to="/contact" >Contato</Link></li>
+                                        <li className="active"><Link className="col-12" to="/" onClick={this.close}>Home</Link></li>
+                                        <li className="active"><Link className="col-12" to="/about" onClick={this.close} >Sobre</Link></li>
+                                        <li className="active"><Link className="col-12" to="/gallery" onClick={this.close} >Galeria</Link></li>
+                                        <li className="active"><Link className="col-12" to="/services" onClick={this.close} >Serviços</Link></li>
+                                        <li className="active"><Link className="col-12" to="/contact" onClick={this.close}>Contato</Link></li>
                                     </ul>
                                 </nav>
                             </div>

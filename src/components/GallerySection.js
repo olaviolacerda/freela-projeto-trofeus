@@ -6,7 +6,7 @@ import image6 from '../images/image_6.jpg';
 export default class GallerySection extends Component {
     render() {
         return (
-            <div id="" className="">
+            <div id="" className="gallery">
                 <div className="container">
                     <div className="row">
                         <div className="">

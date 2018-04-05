@@ -8,13 +8,21 @@ class App extends Component {
   render() {
     return (
       <div className="grid-container">
+        <div className="row">
         {
           window.innerWidth >= 825 ? <Header /> : <MobileHeader />
         }
-        <div className="col-11 col-1-fill ">
-          {this.props.children}
         </div>
+        <div className="static-width">
+        <div className="row">
+          <div className="wrapper col-11 col-1-fill">
+            {this.props.children}
+          </div>
+        </div>
+        </div>
+        <div className="row">
         <Footer />
+        </div>
       </div>
     );
   }
