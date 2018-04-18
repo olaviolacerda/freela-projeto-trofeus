@@ -12,7 +12,7 @@ import EasterEgg from './pages/EasterEgg';
 import NotFound from './pages/NotFound';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, withRouter, Redirect } from 'react-router-dom';
 
 const Routes = withRouter(({ history }) => (
     <ReactCSSTransitionGroup
@@ -27,6 +27,7 @@ const Routes = withRouter(({ history }) => (
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/faith" component={EasterEgg} />
             <Route exact path="*" component={NotFound} />
+            <Redirect to="/" />
         </Switch>
     </ReactCSSTransitionGroup>
 ));
