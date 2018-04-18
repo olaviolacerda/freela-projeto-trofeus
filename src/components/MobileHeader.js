@@ -23,14 +23,14 @@ export default class MobileHeader extends Component {
         this.setState({ nav: navBar, opened: opened })
     }
 
-    close = () => {
-        window.realod();
+    onClick = (e) => {
+        e.preventDefault();
+        window.location.pathname = e.target.pathname;
     }
 
     render() {
         let btnOpenAppear = this.state.opened ? 'hide' : '';
         let btnCloseAppear = this.state.opened ? '' : 'hide';
-
         return (
             <header id="mobile-header" role="banner">
                 <div className="col-12 mobile-header">
@@ -47,11 +47,11 @@ export default class MobileHeader extends Component {
                                 <nav >
 
                                     <ul>
-                                        <li className="active"><Link className="col-12" to="/" onClick={this.close}>Home</Link></li>
-                                        <li className="active"><Link className="col-12" to="/about" onClick={this.close} >Sobre</Link></li>
-                                        <li className="active"><Link className="col-12" to="/gallery" onClick={this.close} >Galeria</Link></li>
-                                        <li className="active"><Link className="col-12" to="/services" onClick={this.close} >Serviços</Link></li>
-                                        <li className="active"><Link className="col-12" to="/contact" onClick={this.close}>Contato</Link></li>
+                                        <li className="active"><Link className="col-12" to="/" onClick={this.onClick}>Home</Link></li>
+                                        <li className="active"><Link className="col-12" to="/about" onClick={this.onClick} >Sobre</Link></li>
+                                        <li className="active"><Link className="col-12" to="/gallery" onClick={this.onClick} >Galeria</Link></li>
+                                        <li className="active"><Link className="col-12" to="/services" onClick={this.onClick} >Serviços</Link></li>
+                                        <li className="active"><Link className="col-12" to="/contact" onClick={this.onClick}>Contato</Link></li>
                                     </ul>
                                 </nav>
                             </div>
