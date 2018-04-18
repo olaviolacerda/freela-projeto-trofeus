@@ -1,14 +1,50 @@
 import React, { Component } from 'react';
+import Section from '../components/Section';
+import GridGallery from 'react-grid-gallery';
+import image0 from '../images/image_0.jpg';
 import image1 from '../images/image_1.jpg';
 import image2 from '../images/image_2.jpg';
 import image3 from '../images/image_3.jpg';
 import image4 from '../images/image_4.jpg';
 import image5 from '../images/image_5.jpg';
 import image6 from '../images/image_6.jpg';
-import Section from '../components/Section';
-import GalleryCard from '../components/GalleryCard'
+import image7 from '../images/image_7.jpg';
+import image8 from '../images/image_8.jpg';
+import image9 from '../images/image_9.jpg';
+import image10 from '../images/image_10.jpg';
+import image11 from '../images/image_11.jpg';
+import image12 from '../images/image_12.jpg';
+import image13 from '../images/image_13.jpg';
+import image14 from '../images/image_14.jpg';
+import image15 from '../images/image_15.jpg';
+import image16 from '../images/image_16.jpg';
+import image17 from '../images/image_17.jpg';
+import image18 from '../images/image_18.jpg';
+import image19 from '../images/image_19.jpg';
+
 
 export default class Gallery extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            images: [image0, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19]
+        }
+    }
+    componentWillMount() {
+        const images = this.state.images.map(image => {
+            return {
+                src: image,
+                thumbnail: image,
+                thumbnailWidth: 320,
+                thumbnailHeight: 200,
+                caption: "Aqui vai a descrição da imagem completa",
+                thumbnailCaption: "Titulo"
+            }
+        })
+
+        this.setState({ images })
+    }
 
     render() {
         return (
@@ -19,32 +55,10 @@ export default class Gallery extends Component {
                     ''
                 }
                 children={
-                    <React.Fragment>
-                        <GalleryCard
-                            title={'Qualquer coisa'}
-                            subtitle={'Outra coisa'}
-                            image={image1} />
-                        <GalleryCard
-                            title={'Qualquer coisa'}
-                            subtitle={'Outra coisa'}
-                            image={image2} />
-                        <GalleryCard
-                            title={'Qualquer coisa'}
-                            subtitle={'Outra coisa'}
-                            image={image3} />
-                        <GalleryCard
-                            title={'Qualquer coisa'}
-                            subtitle={'Outra coisa'}
-                            image={image4} />
-                        <GalleryCard
-                            title={'Qualquer coisa'}
-                            subtitle={'Outra coisa'}
-                            image={image5} />
-                        <GalleryCard
-                            title={'Qualquer coisa'}
-                            subtitle={'Outra coisa'}
-                            image={image6} />
-                    </ React.Fragment>
+                    <div className="gallery">
+                        <GridGallery images={this.state.images}
+                            enableImageSelection={false} />
+                    </div>
                 } />
         );
     }
