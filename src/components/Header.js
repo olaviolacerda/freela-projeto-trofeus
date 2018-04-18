@@ -18,7 +18,7 @@ export default class Header extends Component {
                             <div className="col-3">
                                 <h1><i ></i><Link to="/" className="title">Pablo Gravações</Link></h1>
                             </div>
-                            <div className="col-7 col-2-offset">
+                            <div className="col-9">
                                 <nav >
                                     <ul>
                                         <li className={this.defineClass(path, '/')}><Link to="/" >Home</Link></li>

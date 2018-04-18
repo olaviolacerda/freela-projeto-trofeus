@@ -1,7 +1,7 @@
 .mobile-header { 
     position: fixed;
     top: 0;
-    background-color: rgb(255, 250, 250);
+    background-color: #fff;
     box-shadow: 0 4px 6px -6px #222;
     
     * {
@@ -27,16 +27,19 @@
             color: #009688;
             margin: 1em;
             cursor: pointer;
+            &:after {
+                content: '✖';
+            }
         }
         .btn-open {
-            color: #009688;
+            color: #fff;
             border: 1px solid;
             margin: 0em 0.2em;
             border-radius: 50px;
             border-color: #009688;
-            background: none;
+            background-color: #009688;
             display: flex;
-            padding: 0.3em 0.5em;
+            padding: 0.7em;
             vertical-align: middle;
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
             cursor: pointer;
@@ -51,7 +54,7 @@
         z-index: 999999999;
         text-align: center;
         width: 100%;
-        background-color: black;
+        background-color: #fff;
         height: -webkit-fill-available;
         top: 0;
     }
@@ -88,13 +91,13 @@
            opacity: 0.8;
        }
         a {
-        color: #009688;
+        color: #fff;
       }
     }
 
     .active {
         border-color: #009688;
-        background-color: rgba(0, 150, 135, 0.068);
+            background-color: #009688;
         
     }
 }

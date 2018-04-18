@@ -41,7 +41,7 @@ export default class MobileHeader extends Component {
                             </div>
                             <div className={`nav-side col-12 ${this.state.nav}`}>
                                 <div className={`side-menu-btn ${btnCloseAppear}`}>
-                                    <button className="btn-close" onClick={this.renderNav}>X</button>
+                                    <a className="btn-close" onClick={this.renderNav}></a>
                                 </div>
 
                                 <nav >

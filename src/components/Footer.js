@@ -6,7 +6,7 @@ import '../css/Footer.scss';
 export default class Footer extends Component {
     render() {
         return (
-            <footer id="footer" className="footer" role="footer">
+            <footer id="footer" className="footer">
 
                 <div className="row">
                     <div className="col-6 left">
