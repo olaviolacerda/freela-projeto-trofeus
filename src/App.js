@@ -9,19 +9,20 @@ class App extends Component {
     return (
       <div className="grid-container">
         <div className="row">
-        {
+          {/* {
           window.innerWidth >= 825 ? <Header /> : <MobileHeader />
-        }
+        } */}
+          <MobileHeader />
         </div>
         <div className="static-width">
-        <div className="row">
-          <div className="wrapper col-11 col-1-fill">
-            {this.props.children}
+          <div className="row">
+            <div className="wrapper col-11 col-1-fill">
+              {this.props.children}
+            </div>
           </div>
         </div>
-        </div>
         <div className="row">
-        <Footer />
+          <Footer />
         </div>
       </div>
     );
