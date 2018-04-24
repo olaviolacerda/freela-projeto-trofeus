@@ -10,9 +10,7 @@ const MyMaps = withScriptjs(withGoogleMap((props) => {
             position={marker}
             onClick={props.onToggleOpen}
         >
-            {props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}>
-                Bazinga
-      </InfoWindow>}
+            <button>Click me please</button>
         </Marker>
     </GoogleMap>)
 }))

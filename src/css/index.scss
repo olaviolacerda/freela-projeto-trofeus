@@ -1,12 +1,20 @@
 @import './App.scss';
 @import './Grid.scss';
-@import url('https://fonts.googleapis.com/css?family=Roboto|Courgette');
+@import url('https://fonts.googleapis.com/css?family=Tajawal|Courgette');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  padding-top: 100px;
+  font-family: 'Tajawal', sans-serif;
+  padding-top: 80px;
+}
+
+.top-80 {
+  padding-top: 80px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .wrapper {

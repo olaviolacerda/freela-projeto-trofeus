@@ -1,0 +1,67 @@
+.intro-wrapper {
+    min-height: 500px;
+    color: white;
+    max-height: 500px;
+    background: url(https://images.pexels.com/photos/618151/pexels-photo-618151.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;
+    filter: grayscale(0.7);
+    background-size: cover;
+    letter-spacing: 1px;
+    line-height: 24px;
+    .intro-title {
+        text-align: center;
+        width: 80%;
+         margin: 0 10%;
+         
+         padding: 12em 0 0 0;
+         text-shadow: 2px 5px 20px black;
+         @media all and (max-width: 800px) {
+            padding: 8.5em 0 0 0;
+           
+         }
+         & > h1 {
+            font-size: 3.1rem;
+            @media all and (max-width: 800px) {
+                font-size: 2.1rem;
+             }
+         }
+
+         & > h2 {
+            font-size: 1.2rem;
+            @media all and (max-width: 800px) {
+                font-size: 1rem;
+             }
+         }
+    }
+}
+
+.service-wrapper {
+    position: relative;
+    background: #1fb57b;
+
+    background: -moz-linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
+    background: -webkit-linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
+    background: linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
+    padding-top: 6em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 3em;
+
+    color: rgba(255, 255, 255, 0.7);
+.card-service-title {
+    text-align: center;
+   
+}    
+.card-service {
+    border: none;
+    text-align: center;
+    line-height: 1.5em;
+   padding: 1em;
+   word-break: keep-all;
+    & > p {
+        text-align: justify;
+    }
+}
+
+}

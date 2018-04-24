@@ -3,7 +3,8 @@
     top: 0;
     background-color: #fff;
     box-shadow: 0 4px 6px -6px #222;
-    
+    max-height: 80px;
+    z-index: 9999999;
     * {
         text-decoration: none;
     }
