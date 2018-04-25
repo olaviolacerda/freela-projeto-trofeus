@@ -19,7 +19,7 @@ export default class GallerySection extends Component {
                                 <a class="img-card"><img className="gallery-card-image" src={image18} alt="Blog" /></a>
                                 <div className="gallery-card-text">
                                     <p>Materiais de altíssima qualidade</p>
-                                    <p><a className="link-gallery" href="/gallery">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
+                                    <p><a className="link-gallery" href="/services">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ export default class GallerySection extends Component {
                                 <a class="img-card"><img className="gallery-card-image" src={image14} alt="Blog" /></a>
                                 <div className="gallery-card-text">
                                     <p>Acabamento impecável</p>
-                                    <p><a className="link-gallery" href="/gallery">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
+                                    <p><a className="link-gallery" href="/services">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ export default class GallerySection extends Component {
                                 <a class="img-card"><img className="gallery-card-image" src={image12} alt="Blog" /></a>
                                 <div className="gallery-card-text">
                                     <p>Quantidade incrível de detalhes</p>
-                                    <p><a className="link-gallery" href="/gallery">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
+                                    <p><a className="link-gallery" href="/services">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
                                 </div>
                             </div>
                         </div>
