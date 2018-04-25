@@ -1,50 +1,47 @@
 import React, { Component } from 'react';
-import image4 from '../images/image_4.jpg';
-import image5 from '../images/image_5.jpg';
-import image6 from '../images/image_6.jpg';
-
+import image12 from '../images/image_12.jpg';
+import image14 from '../images/image_14.jpg';
+import image18 from '../images/image_18.jpg';
 export default class GallerySection extends Component {
     render() {
         return (
-            <div id="" className="gallery">
-                <div className="container">
-                    <div className="row">
-                        <div className="">
-                            <h2>Aqui vão as fotos dos trabalhos</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                        </div>
+            <div id="" className="gallery-wrapper">
+                <div className="row">
+                    <div className="gallery-title col-5 col-7-fill">
+                        <h2>Trabalhamos com carinho e dedicação</h2>
+                        <p>Produzimos placas, bottons e troféus de alta qualidade para os mais diversos fins que vão desde a identificação de consultórios e funcionários até as mais belas homenagens e personalização de objetos em metal.</p>
                     </div>
-                    <div className="row">
-                        <div className="">
-                            <div className="">
-                                <a ><img className="" src={image4} alt="Blog" /></a>
-                                <div className="">
-                                    <h3><a >New iPhone 6 Released</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a className="">Read More<i className="fa fa-arrow-right"></i></a></p>
+                </div>
+                <div className="row">
+                    <div className="col-9 col-3-fill gallery-cards-wrapper">
+                        <div className="col-4">
+                            <div className="gallery-card">
+                                <a class="img-card"><img className="gallery-card-image" src={image18} alt="Blog" /></a>
+                                <div className="gallery-card-text">
+                                    <p>Materiais de altíssima qualidade</p>
+                                    <p><a className="link-gallery" href="/gallery">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
                                 </div>
                             </div>
                         </div>
-                        <div className="">
-                            <div className="">
-                                <a ><img className="" src={image5} alt="Blog" /></a>
-                                <div className="">
-                                    <h3><a >Start your day with a beautiful appearance</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a className="">Read More<i className="fa fa-arrow-right"></i></a></p>
+                        <div className="col-4">
+                            <div className="gallery-card">
+                                <a class="img-card"><img className="gallery-card-image" src={image14} alt="Blog" /></a>
+                                <div className="gallery-card-text">
+                                    <p>Acabamento impecável</p>
+                                    <p><a className="link-gallery" href="/gallery">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
                                 </div>
                             </div>
                         </div>
-                        <div className="">
-                            <div className="">
-                                <a ><img className="" src={image6} alt="Blog" /></a>
-                                <div className="">
-                                    <h3><a >Bookmarksgrove right</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p><a className="">Read More<i className="fa fa-arrow-right"></i></a></p>
+                        <div className="col-4">
+                            <div className="gallery-card">
+                                <a class="img-card"><img className="gallery-card-image" src={image12} alt="Blog" /></a>
+                                <div className="gallery-card-text">
+                                    <p>Quantidade incrível de detalhes</p>
+                                    <p><a className="link-gallery" href="/gallery">Confira aqui nossos trabalhos<i className="far fa-images"></i></a></p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

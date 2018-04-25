@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../css/Home.scss'
 
 export default class IntroSection extends Component {
 

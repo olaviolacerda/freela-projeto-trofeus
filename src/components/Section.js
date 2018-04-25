@@ -11,16 +11,14 @@ export default class Section extends Component {
     render() {
         return (
             <div id={`${this.state.classTitle}`}>
-                <div className="container">
-                    <div className="row">
-                        <div className="">
-                            <h2>{this.state.title}</h2>
-                            <p>{this.state.subtitle}</p>
-                        </div>
+                <div className="row">
+                    <div className="">
+                        <h2>{this.state.title}</h2>
+                        <p>{this.state.subtitle}</p>
                     </div>
-                    <div className="row">
-                        {this.state.children}
-                    </div>
+                </div>
+                <div className="row">
+                    {this.state.children}
                 </div>
             </div>
         );

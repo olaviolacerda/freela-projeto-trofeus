@@ -41,16 +41,21 @@
     background: -moz-linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
     background: -webkit-linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
     background: linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
-    padding-top: 6em;
+    padding-top: 3em;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 3em;
-
-    color: rgba(255, 255, 255, 0.7);
+    h2, h1, h3 {
+        color: #fff !important;
+       }
+      p {
+        color: rgba(255, 255, 255, 0.7) !important;
+       }
+    
 .card-service-title {
     text-align: center;
+   margin-bottom: 2em;
    
 }    
 .card-service {
@@ -59,9 +64,87 @@
     line-height: 1.5em;
    padding: 1em;
    word-break: keep-all;
-    & > p {
-        text-align: justify;
-    }
+    
 }
+
+}
+
+.gallery-wrapper {
+    & > * {color: rgba(0, 0, 0, 0.7);}
+    cursor:default;
+    padding: 3em 0;
+    background-color:rgba(45, 64, 89, 0.06);;
+    .gallery-title {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .gallery-card {
+        color: #7f7f7f;
+        min-width: 85%;
+        max-width: 85%;
+        min-height: 350px;
+        max-height: 350px;
+        margin: 1em auto;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        display: block; 
+        line-height: 1.42857143;
+        background: white;
+    -webkit-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    -ms-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    -o-box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 9px 29px -9px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    margin-bottom: 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+        &:hover {
+            box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+    }
+
+    .img-card {
+        width: 100%;
+        height:200px;
+        border-top-left-radius:2px;
+        border-top-right-radius:2px;
+        display:block;
+          overflow: hidden;
+      }
+      .img-card img{
+        width: 100%;
+        height: 200px;
+        object-fit:cover; 
+        transition: all .25s ease;
+      } 
+
+      .gallery-card-text {
+        padding: 1em;
+      }
+
+      .link-gallery {
+          cursor: pointer;
+          transition: all 200ms ease;
+          color: #1fb57b;
+
+          &:active, &:visited {
+            color: #18885d ;
+          }
+          &:hover {
+            color: #18885d ;
+              text-decoration: underline;
+          }
+          & > i {
+            margin: 0 0.5em;
+          }
+      }
 
 }
