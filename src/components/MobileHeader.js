@@ -48,8 +48,6 @@ export default class MobileHeader extends Component {
 
                                     <ul>
                                         <li className="active"><Link className="col-12" to="/" onClick={this.onClick}>Home</Link></li>
-                                        <li className="active"><Link className="col-12" to="/about" onClick={this.onClick} >Sobre</Link></li>
-                                        <li className="active"><Link className="col-12" to="/gallery" onClick={this.onClick} >Galeria</Link></li>
                                         <li className="active"><Link className="col-12" to="/services" onClick={this.onClick} >Serviços</Link></li>
                                         <li className="active"><Link className="col-12" to="/contact" onClick={this.onClick}>Contato</Link></li>
                                     </ul>

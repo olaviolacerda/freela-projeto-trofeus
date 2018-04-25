@@ -1,0 +1,30 @@
+#gallery {
+    padding: 3em 0;
+    text-align: center;
+    background-color: rgba(45, 64, 89, 0.06);
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    overflow: auto;
+    
+    #lightboxBackdrop {
+        z-index: 20;
+    }
+
+    .tile {
+        position: initial !important;
+        transition: all 300ms ease;
+        opacity: 0.8;
+        
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+     
+    
+      .gallery-content {
+          padding: 2em 0;
+          width: 90%;
+          margin: 0 5%;
+      }
+}

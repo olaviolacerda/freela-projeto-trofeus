@@ -7,7 +7,7 @@
     position: fixed;
     max-height: 80px;
     top: 0;
-    z-index: 9999999;
+    z-index: 10;
     * {
         text-decoration: none;
     }
@@ -47,8 +47,8 @@
         border: 1px solid transparent;
         color: #009688;
         &:hover {
-            border-radius: 50px;
-            border-color: #009688;
+            text-decoration: underline;
+            text-underline-position: under;
         }
       }
     }
@@ -60,7 +60,8 @@
             border-color: #009688;
             background-color: #009688;
             color: #fff;
-            cursor: default !important;
+            cursor: default !important !important;
+            text-decoration: none;
           }
     }
 }

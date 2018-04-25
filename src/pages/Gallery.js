@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Section from '../components/Section';
 import GridGallery from 'react-grid-gallery';
+import '../css/Gallery.scss';
 import image0 from '../images/image_0.jpg';
 import image1 from '../images/image_1.jpg';
 import image2 from '../images/image_2.jpg';
@@ -28,7 +29,7 @@ export default class Gallery extends Component {
     constructor() {
         super();
         this.state = {
-            images: [image0, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19]
+            images: [image0, image1, image2, image19, image3, image4, image5, image12, image6, image14, image7, image8, image9, image10, image11, image13, image15, image16, image17, image18]
         }
     }
     componentWillMount() {
@@ -36,10 +37,8 @@ export default class Gallery extends Component {
             return {
                 src: image,
                 thumbnail: image,
-                thumbnailWidth: 320,
-                thumbnailHeight: 200,
-                caption: "Aqui vai a descrição da imagem completa",
-                thumbnailCaption: "Titulo"
+                thumbnailWidth: 278,
+
             }
         })
 
@@ -49,15 +48,19 @@ export default class Gallery extends Component {
     render() {
         return (
             <Section
-                classTitle={'work'}
-                title={'Galeria'}
+                classTitle={'gallery'}
+                title={''}
                 subtitle={
-                    ''
+                    'Confira alguns de nossos serviços realizados'
                 }
                 children={
-                    <div className="gallery">
+
+                    <div class="gallery-content">
                         <GridGallery images={this.state.images}
-                            enableImageSelection={false} />
+                            enableImageSelection={false}
+                            imageCountSeparator={' de '}
+                            backdropClosesModal={true}
+                            showLightboxThumbnails={true} />
                     </div>
                 } />
         );

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Section from '../components/Section';
-import EmailCard from '../components/EmailCard';
 
 export default class Contact extends Component {
 
@@ -20,7 +19,6 @@ export default class Contact extends Component {
                                 <li><i className=""></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=info@email.com&tf=1">info@email.com</a></li>
                             </ul>
                         </div>
-                        <EmailCard />
                     </React.Fragment>}
             />
         );
