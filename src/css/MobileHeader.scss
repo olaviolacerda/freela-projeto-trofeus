@@ -1,7 +1,7 @@
 .mobile-header { 
     position: fixed;
     top: 0;
-    background-color: #fff;
+    background-color: #263a44;
     box-shadow: 0 4px 6px -6px #222;
     max-height: 80px;
     z-index: 10;
@@ -12,21 +12,21 @@
     .hide {
         display: none;
     }
-
+    .side-menu-btn-wrapper{
+    max-height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    
+        }
     .side-menu-btn {
         display: flex;
         flex-direction: row-reverse;
-        margin: 1em;
-        padding: 0 0.5em;
-        margin-right: 0;
         font-size: larger;
         outline: transparent;
-        
+        padding: 1.3em 0.6em;
         .btn-close {
             border: none;
             background: none;
             color: #009688;
-            margin: 1em;
             cursor: pointer;
             &:after {
                 content: '✖';
@@ -35,16 +35,14 @@
         .btn-open {
             color: #fff;
             border: 1px solid;
-            margin: 0em 0.2em;
             border-radius: 50px;
             border-color: #009688;
             background-color: #009688;
             display: flex;
-            padding: 0.7em;
             vertical-align: middle;
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
             cursor: pointer;
-            margin: 1em;
+            padding: 0.6em 1.3em;
         }
     }
 
@@ -55,16 +53,25 @@
         z-index: 999999999;
         text-align: center;
         width: 100%;
-        background-color: #fff;
-        height: -webkit-fill-available;
         top: 0;
+        min-height: -webkit-fill-available;
+        background-color: #263a44;
+        
     }
 
+    
     .title {
         padding: 0 1em;
         font-size: large;
         vertical-align: middle;
-        color: black;
+        color: #fff;
+        text-shadow: 2px 5px 20px black;
+    
+            @media all and (max-width: 800px) {
+                font-size: small;
+                
+             }
+        
     }
     
     ul {

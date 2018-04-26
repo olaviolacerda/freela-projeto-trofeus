@@ -15,10 +15,10 @@ export default class Header extends Component {
                 <div className="col-12 header">
                     <div className="static-width">
                         <div className="row">
-                            <div className="col-3">
+                            <div className="col-3 header-title-wrapper">
                                 <h1><i ></i><Link to="/" className="title">Pablo Gravações</Link></h1>
                             </div>
-                            <div className="col-9">
+                            <div className="col-9 header-list-wrapper">
                                 <nav >
                                     <ul>
                                         <li className={this.defineClass(path, '/')}><Link to="/" >Principal</Link></li>

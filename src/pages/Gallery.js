@@ -55,7 +55,7 @@ export default class Gallery extends Component {
                 }
                 children={
 
-                    <div class="gallery-content">
+                    <div className="gallery-content">
                         <GridGallery images={this.state.images}
                             enableImageSelection={false}
                             imageCountSeparator={' de '}
