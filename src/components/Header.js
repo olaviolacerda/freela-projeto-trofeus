@@ -8,11 +8,12 @@ export default class Header extends Component {
         return path === linkPath ? 'active' : '';
     }
 
+
     render() {
         let path = this.context.router.history.location.pathname;
         return (
-            <header id="header" role="banner">
-                <div className="col-12 header">
+            <header id="header" role="banner" >
+                <div className="header-wrapper  col-12 header show-menu">
                     <div className="static-width">
                         <div className="row">
                             <div className="col-3 header-title-wrapper">

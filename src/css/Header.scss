@@ -6,8 +6,9 @@
     box-shadow: 0 4px 6px -6px #222;
     position: fixed;
     max-height: 80px;
-    top: 0;
     z-index: 10;
+    transition: all .3s ease-in-out;
+    
     * {
         text-decoration: none;
     }

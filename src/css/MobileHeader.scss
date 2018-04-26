@@ -1,17 +1,16 @@
 .mobile-header { 
     position: fixed;
-    top: 0;
+
     background-color: #263a44;
     box-shadow: 0 4px 6px -6px #222;
     max-height: 80px;
     z-index: 10;
+    transition: all .3s ease-in-out;
     * {
         text-decoration: none;
     }
    
-    .hide {
-        display: none;
-    }
+    
     .side-menu-btn-wrapper{
     max-height: -webkit-fill-available;
     min-height: -webkit-fill-available;

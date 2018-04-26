@@ -5,13 +5,15 @@ import '../css/MobileHeader.scss';
 
 export default class MobileHeader extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             nav: 'hide',
             opened: false
+
         }
     }
+
 
     renderNav = () => {
         let opened = false;
@@ -35,8 +37,8 @@ export default class MobileHeader extends Component {
         let btnOpenAppear = this.state.opened ? 'hide' : '';
         let btnCloseAppear = this.state.opened ? '' : 'hide';
         return (
-            <header id="mobile-header" role="banner">
-                <div className="col-12 mobile-header">
+            <header id="mobile-header" role="banner" >
+                <div className={`header-wrapper col-12 mobile-header show-menu`} >
                     <div className="static-width">
                         <div className="row">
                             <div className="col-8">
