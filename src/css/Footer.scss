@@ -1,11 +1,9 @@
 .footer {
     margin: 0 auto;
-    clear: both;
-    color: aliceblue;
+    color: rgba(255, 255, 255, 0.7);
     padding: 2em 0em 1em;
     background-color: #263a44;
     box-shadow: 0 -4px 6px -6px #222;
-    position: relative;
     text-align: center;
     
 
@@ -33,9 +31,7 @@
     }
     
 
-    .border-bottom {
-        width: 100%;
-        margin: 5% 42.5%;
-        border-bottom: 1px solid grey;
-      }
+    p {
+        padding: 0 2em;
+    }
 }

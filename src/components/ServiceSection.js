@@ -7,7 +7,7 @@ export default class ServiceSection extends Component {
                 <div className="service-wrapper">
                     <div className="row">
                         <div className="col-7 col-5-fill card-service-title">
-                            <h2>Aqui pode falar breve sobre os serviços</h2>
+                            <h2>Prezamos por qualidade e sua satisfação</h2>
                             <p>Gravações de alta qualidade e com ótimo acabamento, resistentes à ação do tempo e com alto grau de detalhamento e nitidez. Ideais tanto para homenagens, na forma de trofeus e placas, quanto para dar um acabamento moderno e original para os mais variados objetos em metal. </p>
                         </div>
                     </div>

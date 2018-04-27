@@ -2,12 +2,15 @@
 @import './Grid.scss';
 @import url('https://fonts.googleapis.com/css?family=Tajawal|Courgette|Raleway');
 
+
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
   padding-top: 80px;
-  
+  min-height: 100%;
 }
 
 
@@ -32,3 +35,9 @@ body {
   top: 0 !important;
 }
 
+.section-header{
+  width: 100%;
+  text-align: center;
+  // padding: 1em;
+  margin-bottom: 1em;
+}

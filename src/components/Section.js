@@ -12,7 +12,7 @@ export default class Section extends Component {
         return (
             <div id={`${this.state.classTitle}`}>
                 <div className="row">
-                    <div className="">
+                    <div className="section-header">
                         <h2>{this.state.title}</h2>
                         <p>{this.state.subtitle}</p>
                     </div>

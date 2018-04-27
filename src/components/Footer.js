@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../css/Footer.scss';
 
 export default class Footer extends Component {
+
     render() {
         return (
             <footer id="footer" className="footer">

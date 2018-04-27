@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Section from '../components/Section';
 import GridGallery from 'react-grid-gallery';
 import '../css/Gallery.scss';
 import image0 from '../images/image_0.jpg';
@@ -22,8 +21,6 @@ import image16 from '../images/image_16.jpg';
 import image17 from '../images/image_17.jpg';
 import image18 from '../images/image_18.jpg';
 import image19 from '../images/image_19.jpg';
-
-
 export default class Gallery extends Component {
 
     constructor() {
@@ -37,8 +34,8 @@ export default class Gallery extends Component {
             return {
                 src: image,
                 thumbnail: image,
-                thumbnailWidth: 278,
-
+                thumbnailWidth: 320,
+                thumbnailHeight: 215,
             }
         })
 
@@ -47,22 +44,19 @@ export default class Gallery extends Component {
 
     render() {
         return (
-            <Section
-                classTitle={'gallery'}
-                title={''}
-                subtitle={
-                    'Confira alguns de nossos serviços realizados'
-                }
-                children={
-
                     <div className="gallery-content">
-                        <GridGallery images={this.state.images}
+                    <GridGallery images={this.state.images}
                             enableImageSelection={false}
                             imageCountSeparator={' de '}
                             backdropClosesModal={true}
-                            showLightboxThumbnails={true} />
+                            showLightboxThumbnails={true} 
+                            rowHeight= {200}
+                            margin={3}
+                            
+                            />
+                       
+                            
                     </div>
-                } />
         );
     }
 }
