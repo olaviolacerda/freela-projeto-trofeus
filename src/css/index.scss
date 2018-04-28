@@ -41,3 +41,9 @@ body {
   // padding: 1em;
   margin-bottom: 1em;
 }
+
+.wrapper {
+  min-height: -moz-calc(100% - 180px); /* Firefox */
+    min-height: -webkit-calc(100% - 180px); /* Chrome, Safari */
+    min-height: calc(100% - 180px); /* IE9+ and future browsers */
+}

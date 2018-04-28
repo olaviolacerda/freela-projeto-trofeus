@@ -38,3 +38,5 @@ MAS, se for muito grande, pode ser só assim:
 
 
 A Pablo Gravações trabalha há mais de 20 anos no mercado de gravação em metal, produzindo placas, bottons e troféus de alta qualidade.
+
+const MY_API_KEY = 'AIzaSyBMUGGllr7jNkmhdFKfZT-1PCrV9-4Fbmw';

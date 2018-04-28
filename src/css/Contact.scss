@@ -1,5 +1,84 @@
+.color-grey {
+    background: grey;
+}
 
-.listinha li:nth-child(1) { background: coral; }
-.listinha li:nth-child(2) { background: chocolate; }
-.listinha li:nth-child(3) { background: beige; }
-.listinha li:nth-child(4) { background: tomato; }
+
+.contact-wrapper {
+   
+    min-height: -moz-calc(100vh - 180px); /* Firefox */
+    min-height: -webkit-calc(100vh - 180px); /* Chrome, Safari */
+    min-height: calc(100vh - 180px); /* IE9+ and future browsers */
+    @media all and(max-width: 950px) {
+        width: 100% !important;
+        
+       }
+    div.google-map-wrapper {
+        height: -moz-calc(100vh - 180px); /* Firefox */
+        height: -webkit-calc(100vh - 180px); /* Chrome, Safari */
+        height: calc(100vh - 180px);
+
+        .marker{
+            font-size: 50px;
+             cursor: pointer;
+             &:hover{
+                 opacity: 0.8;
+             }
+         }
+     
+         .map-tooltip{
+             max-width: 320px !important;
+         
+             min-width: 320px !important;
+             margin: 0 auto;
+             text-align: center;
+               padding: 1em 0.1em !important;
+             pointer-events: auto !important;
+         
+         
+         }
+    }
+
+
+    
+    
+    .boxes-wrapper {
+        * {text-align: left;
+            overflow: hidden;}
+        h2 { font-size: 1.4em;}
+        .tel-box {
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            padding: 1em 0.5em;
+            
+            background: tomato;
+        }
+        .address-box{
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            padding: 1em 0.5em;
+            background: beige;
+            
+        }
+    
+        .hour-box{
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            padding: 0.5em;
+            background: chocolate;
+        }
+
+       @media all and(max-width: 950px) {
+        width: 100% !important;
+        * {
+            text-align: center !important;
+        }
+       }
+    
+    }
+    
+    
+
+  }
+
+  
+  
