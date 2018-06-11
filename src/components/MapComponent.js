@@ -8,7 +8,6 @@ import {
   InfoWindow
 } from "react-google-maps";
 const MY_API_KEY = "AIzaSyBMUGGllr7jNkmhdFKfZT-1PCrV9-4Fbmw";
-const FaAnchor = require("react-icons/lib/fa/anchor");
 
 export const Frase = <div>Frase</div>;
 const GoogleMapReact = compose(
@@ -41,7 +40,7 @@ const GoogleMapReact = compose(
     >
       {props.isOpen && (
         <InfoWindow onCloseClick={props.onToggleOpen}>
-         <span>Rua Dr. Dias da Cruz, 62 - Medianeira - POA/RS</span>
+          <span>Rua Dr. Dias da Cruz, 62 - Medianeira - POA/RS</span>
         </InfoWindow>
       )}
     </Marker>
