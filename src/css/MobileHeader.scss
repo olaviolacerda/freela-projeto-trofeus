@@ -1,7 +1,7 @@
 .mobile-header { 
     position: fixed;
 
-    background-color: #263a44;
+    background-color: #6F686D;
     box-shadow: 0 4px 6px -6px #222;
     max-height: 80px;
     z-index: 10;
@@ -25,18 +25,18 @@
         .btn-close {
             border: none;
             background: none;
-            color: #009688;
+            color: #FFFFF0;
             cursor: pointer;
             &:after {
                 content: '✖';
             }
         }
         .btn-open {
-            color: #fff;
+            color: #6F686D;
             border: 1px solid;
             border-radius: 50px;
-            border-color: #009688;
-            background-color: #009688;
+            border-color: #FFFFF0;
+            background-color: #FFFFF0;
             display: flex;
             vertical-align: middle;
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -54,7 +54,7 @@
         width: 100%;
         top: 0;
         min-height: -webkit-fill-available;
-        background-color: #263a44;
+        background-color: #6F686D;
         
     }
 
@@ -63,8 +63,7 @@
         padding: 0 1em;
         font-size: large;
         vertical-align: middle;
-        color: #fff;
-        text-shadow: 2px 5px 20px black;
+        color: #FFFFF0;
     
             @media all and (max-width: 800px) {
                 font-size: small;
@@ -94,17 +93,17 @@
         
        &:hover {
            border-radius: 50px;
-           border-color: #009688;
+           border-color: #FFFFF0;
            opacity: 0.8;
        }
         a {
-        color: #fff;
+        color: #6F686D;
       }
     }
 
     .active {
-        border-color: #009688;
-            background-color: #009688;
+        border-color: #FFFFF0;
+            background-color: #FFFFF0;
         
     }
 }

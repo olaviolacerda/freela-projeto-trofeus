@@ -22,8 +22,8 @@ export default class Header extends Component {
                             <div className="col-9 header-list-wrapper">
                                 <nav >
                                     <ul>
-                                        <li className={this.defineClass(path, '/')}><Link to="/" >Principal</Link></li>
-                                        <li className={this.defineClass(path, '/services')}><Link to="/services" >Serviços</Link></li>
+                                        <li className={this.defineClass(path, '/')}><Link to="/" >Início</Link></li>
+                                        <li className={this.defineClass(path, '/services')}><Link to="/services" >Galeria</Link></li>
                                         <li className={this.defineClass(path, '/contact')}><Link to="/contact" >Contato</Link></li>
                                     </ul>
                                 </nav>

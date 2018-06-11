@@ -33,7 +33,7 @@ durabilidade da pintura. As peças podem ainda ser finalizadas com uma cobertura
 
                     </div>
                     <div className="row">
-                        <p className="col-4 col-8-fill text-center">*Não conseguimos reproduzir pinturas em degradê no metal.</p>
+                        <p className="col-4 col-8-fill text-center">*não produzimos pinturas em degradê no metal.</p>
                     </div>
                 </div>
             </React.Fragment>

@@ -8,7 +8,7 @@ export default class Services extends Component {
         return (
             <Section
                 classTitle={'services'}
-                title={'Serviços'}
+                title={'Galeria'}
                 subtitle={'Confira alguns de nossos serviços realizados'}
                 children={
                     <div className="services-content">
