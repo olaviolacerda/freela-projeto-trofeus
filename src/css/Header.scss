@@ -1,5 +1,5 @@
 .header {
-  background-color: #6F686D;
+  background-color: #f5f5f5;
   padding: 0 1em;
   box-shadow: 0 4px 6px -6px #222;
   position: fixed;
@@ -25,7 +25,7 @@
     padding: 0 0.3em 0 0;
     font-size: large;
     vertical-align: middle;
-    color: #FFFFF0;
+    color: #6F686D;
   }
 
   ul {
@@ -47,7 +47,7 @@
       -webkit-font-smoothing: antialiased;
       border-radius: 50px;
       border: 1px solid transparent;
-      color: #b3b492;
+      color: #6F686D;
       transition: all 0.3s ease;
 
       &:hover {
@@ -59,10 +59,10 @@
   .active {
     cursor: default !important;
     a {
-        border-color: #FFFFF0;
-        background-color: #FFFFF0;
-        color: #6F686D;
-        text-decoration: none;
+      border-color: #CBB8A9;
+      background-color: #CBB8A9;
+      color: #6F686D;
+      text-decoration: none;
     }
   }
 }
